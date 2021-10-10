@@ -7,7 +7,7 @@ print("Numero de Threads: " + str(psutil.cpu_count(logical=False)))
 dat_freq = psutil.cpu_freq()
 print("Frecuencia del CPU: %.2f" %(dat_freq.current/1000))
 dat_ram = psutil.virtual_memory()
-print("Memoria RAM: 5.2f" %(dat_ram.total/1024/1024/1024))
+print("Memoria RAM: %.2f" %(dat_ram.total/1024/1024/1024))
 
 print("Particiones de disco: \n\n")
 particiones = psutil.disk_partitions()
